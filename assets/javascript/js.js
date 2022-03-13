@@ -1,14 +1,21 @@
 
-// const
+// tables
 
-const menu = document.querySelector('#mobile-menu');
-const menuLinks = document.querySelector('.navbar-menu');
+const consts = {
+    'geral':{
+        'menu': document.querySelector('#mobile-menu'),
+        'links': document.querySelector('.navbar-menu'),
+    },
+};
 
 // click
 
-menu.addEventListener('click',
-    function(){
-        menu.classList.toggle('is-active')
-        menuLinks.classList.toggle('active')
+consts['geral']['menu'].addEventListener('click',
+    () => {
+        consts['geral']['menu'].classList.toggle('is-active')
+        consts['geral']['links'].classList.toggle('active')
+
+        console.log(consts['geral']['menu'].classList)
+        console.log(consts['geral']['links'].classList)
     }
 );

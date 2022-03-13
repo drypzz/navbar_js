@@ -193,6 +193,12 @@
         cursor: pointer;
     }
 
+    #mobile-menu.is-active .bar{
+        background-color: #833eb4;
+        background: -webkit-linear-gradient(to right, #fcb845, #fd1d1d, #833eb4);
+        background: linear-gradient(to right, #fcb845, #fd1d1d, #833eb4);
+    }
+
     #mobile-menu.is-active .bar:nth-child(2){
         opacity: 0;
     }
